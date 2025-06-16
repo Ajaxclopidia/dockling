@@ -1,0 +1,34 @@
+# Core FastAPI dependencies
+fastapi
+uvicorn[standard]
+python-multipart
+
+# AI/ML dependencies
+torch
+transformers
+accelerate
+docling-core
+docling
+
+# Image processing
+Pillow
+opencv-python
+
+# PDF processing
+PyMuPDF
+pymupdf4llm
+
+# Optional performance improvements
+flash-attn
+vllm
+
+# Utility libraries
+numpy
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Development dependencies (optional)
+pytest
+black
+isort
