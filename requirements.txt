@@ -19,7 +19,7 @@ PyMuPDF
 pymupdf4llm
 
 # Optional performance improvements
-flash-attn
+#flash-attn
 #vllm
 
 # Utility libraries

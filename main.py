@@ -77,7 +77,7 @@ async def startup_event():
         model = AutoModelForVision2Seq.from_pretrained(
             "ds4sd/SmolDocling-256M-preview",
             torch_dtype=torch.bfloat16,
-            _attn_implementation="flash_attention_2" if DEVICE == "cuda" else "eager",
+            _attn_implementation="eager",
         ).to(DEVICE)
         print(f"Model loaded successfully on {DEVICE}")
         
