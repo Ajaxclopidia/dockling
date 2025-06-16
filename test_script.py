@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 import io
 
-API_BASE_URL = "http://localhost:8001"
+API_BASE_URL = "http://localhost:8010"
 
 def create_test_image():
     """Create a simple test image with text"""
