@@ -13,7 +13,7 @@ from pathlib import Path
 import time
 
 class SmolDoclingClient:
-    def __init__(self, base_url="http://localhost:8000"):
+    def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url.rstrip('/')
     
     def health_check(self):

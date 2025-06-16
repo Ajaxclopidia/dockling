@@ -4,7 +4,7 @@ services:
   smoldocling-api:
     build: .
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
       - CUDA_VISIBLE_DEVICES=0  # Adjust if you have multiple GPUs
       - TRANSFORMERS_CACHE=/app/models
@@ -22,7 +22,7 @@ services:
               capabilities: [gpu]
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
       interval: 30s
       timeout: 10s
       retries: 3
